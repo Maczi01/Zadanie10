@@ -5,10 +5,9 @@ public class Room {
     private int actualTemperature;
     private boolean AirConditioner;
 
-    boolean colder(Room room) {
-        boolean isWork = false;
-        if(room.isAirConditioner()){
-            room.setActualTemperature(getActualTemperature()-1);
+    boolean colder() {
+        if(isAirConditioner() && actualTemperature>minimalTemperature){
+            actualTemperature = actualTemperature -1;
             return true;
         }
         return false;

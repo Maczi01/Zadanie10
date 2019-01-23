@@ -20,16 +20,14 @@ public class Main {
         room.setAirConditioner(ac);
 
         room.showInfo(room);
-        room.colder(room);
+        System.out.println(room.colder());
         room.showInfo(room);
-        room.colder(room);
+        System.out.println(room.colder());
         room.showInfo(room);
-        room.colder(room);
+        System.out.println(room.colder());
         room.showInfo(room);
-        room.colder(room);
+        System.out.println(room.colder());
         room.showInfo(room);
-
-
 
     }
 }
